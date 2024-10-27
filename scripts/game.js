@@ -7,7 +7,6 @@ async function getword() {
       var lines = text.split("\n");
       word = lines[Math.floor(Math.random() * lines.length)].trim();
     });
-  console.log(word);
 }
 
 var answersec = document.querySelector(".answer-section");
@@ -49,7 +48,6 @@ function placenextpart(hp) {
 }
 
 function isinword(word, letter) {
-  console.log("searching for:" + letter);
   for (var i = 0; i < word.length; i++) {
     if (word[i].toUpperCase() === letter.toUpperCase()) return true;
   }
